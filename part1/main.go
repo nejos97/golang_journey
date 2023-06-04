@@ -21,6 +21,7 @@ func main() {
 		Width:  30,
 	}
 	fmt.Println(myCar.Make)
+	fmt.Println(myCar.wash())
 
 }
 
@@ -37,4 +38,8 @@ type car struct {
 	Model  string
 	Height int
 	Width  int
+}
+
+func (c car) wash() string {
+	return fmt.Sprintf("Processing car(%s) washing...", c.Make)
 }
