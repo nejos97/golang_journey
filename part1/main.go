@@ -23,6 +23,17 @@ func main() {
 	fmt.Println(myCar.Make)
 	fmt.Println(myCar.wash())
 
+	language := "go"
+	var dev string
+	switch language {
+	case "go":
+		dev = "gopher"
+	case "python":
+		dev = "pythonist"
+	default:
+		dev = "javascript"
+	}
+	fmt.Printf("The language is %s and the dev is %s \n", language, dev)
 }
 
 func sub(s1 string, s2 string) string {
